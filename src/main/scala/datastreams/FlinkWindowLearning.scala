@@ -3,7 +3,16 @@ package datastreams
 import org.apache.flink.streaming.api.scala._
 import generators.useractivity.{UserActivity, UserActivitySource}
 
-object WindowEssential {
+/**
+ * Flink Window Learning - A comprehensive example for learning Flink windowing features
+ * 
+ * This application demonstrates:
+ * - Reading user activity data from JSON
+ * - Processing out-of-order events
+ * - Window operations and aggregations
+ * - Watermark handling for late events
+ */
+object FlinkWindowLearning {
 
   private def aggregateUserActivityStream(): Unit = {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
