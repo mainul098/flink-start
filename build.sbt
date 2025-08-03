@@ -4,6 +4,8 @@ version := "0.1"
 
 scalaVersion := "2.12.15"
 
+resolvers += "Typesafe Repo" at "https://repo.typesafe.com/typesafe/releases/"
+
 val flinkVersion = "1.13.2"
 val postgresVersion = "42.2.2"
 val logbackVersion = "1.2.10"
